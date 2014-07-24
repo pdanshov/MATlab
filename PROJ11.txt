@@ -1,0 +1,14 @@
+% Table One
+A=4; a=A; B=3; b=B; C=2; c=C; D=1; d=D; F=0; f=F;
+% Table Two
+MA1275=4; EET1122=4; EET1102=2; EG1101=3;
+total_credits = 0; total_hp = 0;
+courses = input("Enter the number of courses taken: ");
+for k=1:courses
+	course = input("Enter course #"+k);
+	grade = input("Enter grade for "+course);
+	total_credits += course;
+	total_hp += (course * grade);
+end
+gpa = total_hp/total_credits;
+disp("Your GPA = "+gpa);
